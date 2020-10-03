@@ -10,7 +10,7 @@ if [ $(id -u) -ne 0 ]; then
 fi
 #
 #
-echo "Branchez un Clé USB Sandisk Ultrafit 32GB ou Plus"
+echo "Branchez une Clé USB Sandisk Ultrafit 32GB ou Plus"
 while [ ! -e /dev/sd[a-z] ] ; do echo "VEUILLEZ BRANCHEZ UNE CLEF USB ULTRAFIT 32GB ou +" && sleep 1 ; done
 #time curl -N -s https://www.free-solutions.ch/GREEN_SPIDER/4.0/GREEN_SPIDER_5.0.3.dd.gz | gunzip -c | pv -B32M >
 DRIVEUSB=`lsblk | grep disk | awk '{ print $1 }' | grep sd | tail -1l`
