@@ -65,7 +65,7 @@ if [ $? = 1 ]; then exit ;fi
 	echo ""
 #exit
 touch lck.fs
-while [ -e lck.fs ] ; do kdialog --msgbox "<h1>Veuillez Patienter Creation clé USB en Cours...</h1>" && sleep 1 ; done &
+while [ -e lck.fs ] ; do kdialog --msgbox "<h1>Veuillez Patienter Creation clé USB en Cours...<br>Celà peut prendre plusieurs heures<br> 20 min si Internet ultra rapide</h1>" && sleep 1 ; done &
 	curl -N -s https://www.free-solutions.ch/GREEN_SPIDER/4.0/GREEN_SPIDER_5.0.3.dd.gz | gunzip -c | pv -B32M > $DEVUSB
 sync
 kdialog --msgbox "<h1>Votre clé Bootable Free-Solutions OS<br> est prête à être booté !!! ENJOY</h1>"
