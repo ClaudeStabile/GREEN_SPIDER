@@ -12,3 +12,6 @@ DISTRO : Ceci n'est pas une Distro classique, un seul fichier contient l'ensembl
 
 Développeurs : J'invite ceux qui veulent contribuer d'une manière ou d'une autre à faire évoluer le code de ce petit script. La distribution déployée sur la clé est la versions Suisse FR de Free-Solutions OS. Le mode de distribution de l'OS est basé sur un seul fichier qui contient l'intégralité de l'OS et des applications.
 On utilise et applique le paradox d'Unix "Everything is a file". C'est le même fichier .dd.gz qui constitue l'OS et qui est bootable sur Laptops Mac et PC. L'OS devient universel et non-installé c'est exactement le même OS qui tourne sur toutes les machines et ça change tout !
+
+2 Scripts à Disposition un pour Kde avec quelques DialBox et un pure bash. A utiliser avec précaustion MERCI :)
+
