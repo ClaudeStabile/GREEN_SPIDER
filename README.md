@@ -12,6 +12,7 @@ Pour commander une clé Free-Solutions OS : https://www.free-solutions.ch
 
 ## UTILISATION :
 Je vous invite à utiliser l'OS tel qu'il est dans un premier temps, vous devriez avoir tout ce dont vous avez besoin. Le but étant de fournir un OS utilisable immédiatement par n'importe qui sur n'importe quel Laptop sans efforts. Le but est aussi de montrer qu'une autre approche est possible, que ce type d'OS peut sauver de la destruction des tonnes de PC's. Je recherche des partenaires pour développer et étendre ces concepts, il y a urgence la planète est pollué chaque jours par des millions de PC qui sont jetés uniquement car il n'ont plus d'operating system à jour. Merci d'avance à tout ceux qui m'aideront à contribuer positivement à la lutte au gaspi et l'obsolescence programmée
+Doc de démarrage USB de la clé Free-Solutions : https://www.free-solutions.ch/clearspace/servlet/JiveServlet/downloadBody/3815-102-2-4840/LettreFS_avec_clef.pdf
 
 ### DISTRO : 
 Ceci n'est pas une Distro classique, un seul fichier contient l'ensemble de la Distribution. Il est possible de faire des mises à jour et installation de logiciels normalement sur la clé une fois booté
