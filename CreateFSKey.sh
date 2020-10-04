@@ -1,4 +1,5 @@
 #!/bin/bash 
+#
 # Creation de clé Free-Solutions OS bash
 #
 # Necesssite curl, pv , gunzip
@@ -9,6 +10,10 @@ if [ $(id -u) -ne 0 ]; then
         exit
 fi
 #
+#
+# Install et check package pv
+#
+if dpkg -l | grep "pv" | grep "pipeline" >/dev/null ; then echo "Le package pv est installé :)" ; else echo "INSTALLATION du package pv" && apt install -y pv ; fi
 #
 echo "Branchez une Clé USB Sandisk Ultrafit 32GB ou Plus"
 while [ ! -e /dev/sd[a-z] ] ; do echo "VEUILLEZ BRANCHEZ UNE CLEF USB ULTRAFIT 32GB ou +" && sleep 1 ; done
