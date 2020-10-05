@@ -8,7 +8,7 @@ Installe uniquement la version Suisse FR. La même technologie peut être mise e
 ## ATTENTION !!! : 
 L'utilisation de ce script est à vos risques et périls. Assurez vous de ne pas effacer le mauvais disque !!!
 J'invite ceux qui ne sont pas à l'aise avec ce type de commande et de manupulation à nous commander une clé USB Free-Solutions OS pour être sûr du résultat
-Pour commander une clé Free-Solutions OS : https://www.free-solutions.ch
+Pour commander une clé Free-Solutions OS : https://www.free-solutions.ch Assistance au Boot Via VidCall si nécessaire 30mn
 
 ## UTILISATION :
 Je vous invite à utiliser l'OS tel qu'il est dans un premier temps, vous devriez avoir tout ce dont vous avez besoin. Le but étant de fournir un OS utilisable immédiatement par n'importe qui sur n'importe quel Laptop sans efforts. Le but est aussi de montrer qu'une autre approche est possible, que ce type d'OS peut sauver de la destruction des tonnes de PC's. Je recherche des partenaires pour développer et étendre ces concepts, il y a urgence la planète est pollué chaque jours par des millions de PC qui sont jetés uniquement car il n'ont plus d'operating system à jour. Merci d'avance à tout ceux qui m'aideront à contribuer positivement à la lutte au gaspi et l'obsolescence programmée
