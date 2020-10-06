@@ -23,12 +23,22 @@ On utilise et applique le paradox d'Unix "Everything is a file". C'est le même 
 
 Avec ce projet 2 scripts sont à disposition un pour Kde avec quelques DialBox et un pure bash. A utiliser avec précaution MERCI :)
 
-# Support Consulting & Contact (Payant)
+## Support Consulting & Contact (Payant)
 Merci de vous inscrire sur https://www.free-solutions.org/pade 
 Une fois inscrit, vous pouvez me Tchatter directement mon JID est claude@www.free-solutions.org
 Free-Solutions fabrique aussi en volume ce type de clé jusque 500/jour et peut rapidement répondre à des besoins massifs. On produit aussi des masters de clés pour les entreprises qui désirent s'affranchir de Windows et utiliser un OS universel et transportable. C'est aussi la manière la plus sûre de déjouer les piratages et attaques. Il n'est pas facile de pirater des machines qui ne contienent aucun OS et dont l'OS est apporté par l'utilisateur. Ca devrai faire réfléchir. L'approche de 100% de Windows sur les postes de travail expose vos ordinateurs à une menace permanente. Si vous changez l'approche, les pirates seront bien ennuyés et dans l'impossibilité de nuire à votre IT. Les pirates exploitent des failles connues d'un certain OS très vulnérable. Vous voulez en sortir ? Contactez nous, et essayez une autre vision de l'IT
 ## Boot USB assistance via VidConf : 50CHF
 Pour ceux qui ont fabriqué leur clé eux mêmes et donc rien payé, je fourni volontier aide au boot USB via visioconf facturable 50CHF. Ceux qui ont fais l'acquisition d'une clé bénéficient de ce service gratuitement si nécessaire.
+
+## Votre soutient au projet
+La meilleure façon de soutenir l'idée et le projet est de nous acheter des clés prêtes à l'emploi. Vous pouvez aussi utiliser la clé et payer une contribution si vous aimez le concept et le produit. Il y a beaucoup d'heures de travail et de moyens nécessaires pour arriver à ce résultat. Je remercie tout ceux qui ont fait l'acquisition d'une clé Free-Solutions OS. Des utilisateurs de 11 à 65ans avec tout type de profils.
+Je remercie par avance tous les contributeurs financiers ou autre, les soutients et ceux qui m'ont aider à faire connaître le concept
+
+## Halte au Gaspi Stop les déchets électroniques
+
+Chaque semaine des millions de PC sont jetés non pas parcequ'ils sont HS mais parcequ'il n'ont soit disant plus d'OS à jour et c'est dangereux! Je pense que ne pas recycler ces machines est dangereux et criminel pour la planète. Free Solutions OS est une solution qui est applicable immédiatement à toutes ces machines sans perte de fonctionalité ni de performance et en 3 min.
+
+
 
 
 
