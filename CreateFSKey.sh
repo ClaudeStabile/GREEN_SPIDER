@@ -75,5 +75,5 @@ else
         curl -N -s https://www.free-solutions.ch/GREEN_SPIDER/4.0/GREEN_SPIDER_5.0.3.dd.gz | gunzip -c | (pv -B32M -n -  > $DEVUSB  conv=notrunc,noerror) 2>&1 | dialog --title "Creation de Free-Solutions OS sur USB" --gauge "\nCréation Clé Free-Solutions OS en cours Veuillez patienter...\n\nBien attendre jusqu'au message :\n Votre clé Bootable Free-Solutions OS est prête à être bootée  ENJOY" 10 75 0 
 fi
 sync
-echo "Votre clé Bootable Free-Solutions OS est prête à être booté !!! ENJOY"
+dialog --infobox "\nVotre clé Bootable Free-Solutions OS est prête à être booté! ENJOY" 5 70 
 echo ""
