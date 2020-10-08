@@ -8,6 +8,12 @@ if [ $(id -u) -ne 0 ]; then
         echo "Redémarrez ce programme avec sudo ou en temps qu'utilisateur 'root'"
         exit
 fi
+if [ "X${XDG_RUNTIME_DIR}" = "X" ]; then
+        if [ ! -d /tmp/runtime-root ]; then
+                mkdir  /tmp/runtime-root
+        fi
+        export XDG_RUNTIME_DIR=/tmp/runtime-root
+fi
 #
 #
 # Get DialBox image
@@ -69,9 +75,11 @@ if [ $? = 1 ]; then exit ;fi
 	echo ""
 #exit
 touch lck.fs
-while [ -e lck.fs ] ; do kdialog --msgbox "<h1>Veuillez Patienter Creation clé USB en Cours...<br>Celà peut prendre plusieurs heures<br> 20 min si Internet ultra rapide</h1>" && sleep 1 ; done &
-	curl -N -s https://www.free-solutions.ch/GREEN_SPIDER/4.0/GREEN_SPIDER_5.0.3.dd.gz | gunzip -c | pv -B32M > $DEVUSB
+while [ -e lck.fs ] ; do kdialog --passivepopup "<h1>Veuillez Patienter Creation clé USB en Cours...<br>Celà peut prendre plusieurs heures<br> 20 min si Internet ultra rapide</h1>" && sleep 1 ; done &
+#	curl -N -s https://www.free-solutions.ch/GREEN_SPIDER/4.0/GREEN_SPIDER_5.0.3.dd.gz | gunzip -c | pv -B32M > $DEVUSB
+curl -N -s https://www.free-solutions.ch/GREEN_SPIDER/4.0/GREEN_SPIDER_5.0.3.dd.gz | gunzip -c | (pv -B32M -n -  > $DEVUSB  conv=notrunc,noerror) 2>&1 | dialog --gauge "Création Clé Free-Solutions OS en cours Veuillez patienter..." 10 70 0
+kdialog --passivepopup "<h1>Sync sur USB en cours veuillez Patienter <br></h1>" &
 sync
-kdialog --msgbox "<h1>Votre clé Bootable Free-Solutions OS<br> est prête à être booté !!! ENJOY</h1>"
+kdialog --msgbox "<h1>Votre clé Bootable Free-Solutions OS<br> est prête à être booté !!! ENJOY</h1>" &
 rm lck.fs
 echo ""

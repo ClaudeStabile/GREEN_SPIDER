@@ -9,11 +9,19 @@ if [ $(id -u) -ne 0 ]; then
         echo "Redémarrez ce programme avec sudo ou en temps qu'utilisateur 'root'"
         exit
 fi
+if [ "X${XDG_RUNTIME_DIR}" = "X" ]; then
+        if [ ! -d /tmp/runtime-root ]; then
+                mkdir  /tmp/runtime-root
+        fi
+        export XDG_RUNTIME_DIR=/tmp/runtime-root
+fi
 #
 #
 # Install et check package pv
 #
 if dpkg -l | grep "pv" | grep "pipeline" >/dev/null ; then echo "Le package pv est installé :)" ; else echo "INSTALLATION du package pv" && apt install -y pv ; fi
+#apt install dialog
+if dpkg -l | grep "user-friendly dialog"  | grep -v whiptail >/dev/null ; then echo "Le package dialog est installé :)" ; else echo "INSTALLATION du package dialog" && apt install -y dialog ; fi
 #
 echo "Branchez une Clé USB Sandisk Ultrafit 32GB ou Plus"
 while [ ! -e /dev/sd[a-z] ] ; do echo "VEUILLEZ BRANCHEZ UNE CLEF USB ULTRAFIT 32GB ou +" && sleep 1 ; done
@@ -50,7 +58,7 @@ echo "PRODUCT: " $PRODUCT
 echo "Modéle de clé détecté :" $DETECTEDTYPE
 if [ $DETECTEDTYPE = "sandisk_ultra32_old" ] || [ $DETECTEDTYPE = "sandisk_ultra32" ]
 # Il nous faut au minimum 60088320 secteurs de 512, les anciennes clés Sandisk 32GB ne fonctioneront pas
-then echo "Clé Sandisk ancienne : MODELE INCORRECT Merci d'utiliser le sernier modèle Sandisk Ultra 32GB !!!"  && exit
+then echo "Clé Sandisk ancienne : MODELE INCORRECT Merci d'utiliser le dernier modèle Sandisk Ultra 32GB !!!"  && exit
 fi
 printf "\nVous pouvez tenter de créer votre clef USB Free-Solutions OS"
 printf "\nVous avez besoin d'une très bonne connection Internet, sans interruptions"
@@ -64,7 +72,8 @@ else
 	echo "Creation de votre clé Free-Solutions OS..."
 	echo "Attention le temps d'execution est long voire très long..."
 	echo ""
-	curl -N -s https://www.free-solutions.ch/GREEN_SPIDER/4.0/GREEN_SPIDER_5.0.3.dd.gz | gunzip -c | pv -B32M > $DEVUSB
+        curl -N -s https://www.free-solutions.ch/GREEN_SPIDER/4.0/GREEN_SPIDER_5.0.3.dd.gz | gunzip -c | (pv -B32M -n -  > $DEVUSB  conv=notrunc,noerror) 2>&1 | dialog --gauge "Création Clé Free-Solutions OS en cours Veuillez patienter..." 10 70 0
+
 fi
 sync
 echo "Votre clé Bootable Free-Solutions OS est prête à être booté !!! ENJOY"
