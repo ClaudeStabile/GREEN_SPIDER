@@ -77,7 +77,7 @@ if [ $? = 1 ]; then exit ;fi
 touch lck.fs
 while [ -e lck.fs ] ; do kdialog --passivepopup "<h1>Veuillez Patienter Creation clé USB en Cours...<br>Celà peut prendre plusieurs heures<br> 20 min si Internet ultra rapide</h1>" && sleep 1 ; done &
 #	curl -N -s https://www.free-solutions.ch/GREEN_SPIDER/4.0/GREEN_SPIDER_5.0.3.dd.gz | gunzip -c | pv -B32M > $DEVUSB
-curl -N -s https://www.free-solutions.ch/GREEN_SPIDER/4.0/GREEN_SPIDER_5.0.3.dd.gz | gunzip -c | (pv -B32M -n -  > $DEVUSB  conv=notrunc,noerror) 2>&1 | dialog --gauge "Création Clé Free-Solutions OS en cours Veuillez patienter..." 10 70 0
+curl -N -s https://www.free-solutions.ch/GREEN_SPIDER/4.0/GREEN_SPIDER_5.0.3.dd.gz | gunzip -c | (pv -B32M -n -  > $DEVUSB  conv=notrunc,noerror) 2>&1 | dialog --title "Creation de Free-Solutions OS sur USB" --gauge "\nCréation Clé Free-Solutions OS en cours Veuillez patienter...\n\nBien attendre jusqu'au message :\n Votre clé Bootable Free-Solutions OS est prête à être bootée  ENJOY" 10 75 0 
 kdialog --passivepopup "<h1>Sync sur USB en cours veuillez Patienter <br></h1>" &
 sync
 kdialog --msgbox "<h1>Votre clé Bootable Free-Solutions OS<br> est prête à être booté !!! ENJOY</h1>" &
