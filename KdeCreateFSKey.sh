@@ -71,7 +71,7 @@ printf "\nAUCUN FICHIER n'est chargé sur votre machine, le code est directement
 kdialog --title "Efface le disque USB: $DEVUSB" --warningyesno "ETES VOUS SUR et CERTAIN de VOULOIR EFFACER : $DEVUSB " 
 if [ $? = 1 ]; then exit ;fi
 	echo "Creation de votre clé Free-Solutions OS..."
-	kdialog --msgbox "<h2>Attention le temps d'execution est long voire très long...<br> Bien attendre le message final :<br> 'Votre clé Bootable Free-Solutions OS est prête à être booté !!!'</h2>"
+	kdialog --msgbox "<h2>Attention le temps d'execution est long voire très long...<br> Bien attendre le message final :<br> 'Votre clé Bootable Free-Solutions OS est prête à être bootée !!!'</h2>"
 	echo ""
 #exit
 touch lck.fs
@@ -80,6 +80,6 @@ while [ -e lck.fs ] ; do kdialog --passivepopup "<h1>Veuillez Patienter Creation
 curl -N -s https://www.free-solutions.ch/GREEN_SPIDER/4.0/GREEN_SPIDER_5.0.3.dd.gz | gunzip -c | (pv -B32M -n -  > $DEVUSB  conv=notrunc,noerror) 2>&1 | dialog --title "Creation de Free-Solutions OS sur USB" --gauge "\nCréation Clé Free-Solutions OS en cours Veuillez patienter...\n\nBien attendre jusqu'au message :\n Votre clé Bootable Free-Solutions OS est prête à être bootée  ENJOY" 10 75 0 
 kdialog --passivepopup "<h1>Sync sur USB en cours veuillez Patienter <br></h1>" &
 sync
-kdialog --msgbox "<h1>Votre clé Bootable Free-Solutions OS<br> est prête à être booté !!! ENJOY</h1>" 
+kdialog --msgbox "<h1>Votre clé Bootable Free-Solutions OS<br> est prête à être bootée !!! ENJOY</h1>" 
 rm lck.fs
 echo ""
