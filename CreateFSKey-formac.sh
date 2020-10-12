@@ -24,7 +24,7 @@ read DriveNumber
 if [ $DriveNumber -lt $i ] && [ $DriveNumber -gt 0 ]; then
     Source=${DriveChoice[$DriveNumber]}"/"
 
-echo "Vous avez sélectionnez le disque suivant:"
+echo "Vous avez sélectionné le disque suivant:"
 df -Hl | grep "${DriveChoice[$DriveNumber]}" | awk '{ print $1,$2,$9 }'
 echo "Ce volume va être formaté, toutes les données seront supprimées."
 echo "Vous validez ? : Y/N"
