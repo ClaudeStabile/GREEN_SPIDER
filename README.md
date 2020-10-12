@@ -1,9 +1,11 @@
 # GREEN_SPIDER
 Free-Solutions OS - Creation clé USB à partir de la Distro au format .dd.gz
-Script Bash de Création de Clé USB sous Linux
+    o Script Bash & Kde de Création de Clé USB depuis Linux Ubuntu/Debian/Mint
+    o Script pour Mac depuis MacOS ==> Free Solutions OS
+    o Procédure pour Windows ==> Free Solutions OS 
 
 ## Limitations : 
-Installe uniquement la version Suisse FR. La même technologie peut être mise en oeuvre pour produire et délivrer votre OS privé pour votre entreprise. Et oui contrairement aux idées reçues il n'est pas compliqué de se fabriquer son propre OS dédié à votre business et utilisable sur la totalité des postes de l'entreprise. Si cette approche vous intéresse, Free-Solutions Sàrl vous aide à créer votre OS privé. Cette approche vous permettra de conserver vos PC beaucoup plus longtemps en toute sécurité car ils fonctionnent avec un OS récent basé sur Ubuntu 20.04 LTS
+Installe uniquement la version Suisse FR. La même technologie peut être mise en oeuvre pour produire et délivrer votre OS privé pour votre entreprise. Et oui contrairement aux idées reçues il n'est pas compliqué de se fabriquer son propre OS dédié à votre business et utilisable sur la totalité des postes de l'entreprise. Si cette approche vous intéresse, Free-Solutions Sàrl vous aide à créer votre OS privé. Cette approche vous permettra de conserver vos PC beaucoup plus longtemps en toute sécurité car ils fonctionnent avec un OS récent basé sur Ubuntu 20.04 LTS. 
 
 ## ATTENTION !!! : 
 L'utilisation de ce script est à vos risques et périls. Assurez vous de ne pas effacer le mauvais disque !!!
@@ -32,7 +34,7 @@ Pour ceux qui ont fabriqué leur clé eux mêmes et donc rien payé, je fournis 
 
 ## Votre soutien au projet
 La meilleure façon de soutenir l'idée et le projet est de nous acheter des clés prêtes à l'emploi. Vous pouvez aussi utiliser la clé et payer une contribution si vous aimez le concept et le produit. Il y a beaucoup d'heures de travail et de moyens nécessaires pour arriver à ce résultat. Je remercie tout ceux qui ont déjà fait l'acquisition d'une clé Free-Solutions OS. Des utilisateurs de 11 à 65ans avec tout type de profils et de hardware PC/Mac
-Je remercie par avance tous les contributeurs financiers ou autre, les soutiens et ceux qui m'ont aidé à faire connaître le concept
+Je remercie par avance tous les contributeurs financiers ou autre, les soutiens et ceux qui m'ont aidé à faire connaître le concept. Vous avez des idées des business cases des projets ? Contactez nous, le concept a de nombreuses possibilités, avantages et énormément d'applications possibles.
 
 ## Halte au Gaspi ! Stop aux déchets électroniques
 
