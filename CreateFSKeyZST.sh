@@ -23,7 +23,7 @@ fi
 if dpkg -l | grep "pv" | grep "pipeline" >/dev/null ; then echo "Le package pv est installé :)" ; else echo "INSTALLATION du package pv" && apt install -y pv ; fi
 #apt install dialog
 if dpkg -l | grep "user-friendly dialog"  | grep -v whiptail >/dev/null ; then echo "Le package dialog est installé :)" ; else echo "INSTALLATION du package dialog" && apt install -y dialog ; fi
-if dpkg -l | grep "zstd"  >/dev/null ; then echo "Le package dialog est installé :)" ; else echo "INSTALLATION du package dialog" && apt install -y dialog ; fi
+if dpkg -l | grep "zstd" | grep -v libzstd1 >/dev/null ; then echo "Le package zstd est installé :)" ; else echo "INSTALLATION du package zstd" && apt install -y zstd ; fi
 #
 echo "Branchez une Clé USB Sandisk Ultrafit 32GB ou Plus"
 while [ ! -e /dev/sd[a-z] ] ; do echo "VEUILLEZ BRANCHEZ UNE CLEF USB ULTRAFIT 32GB ou +" && sleep 1 ; done
