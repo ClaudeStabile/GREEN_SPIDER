@@ -32,7 +32,7 @@ DRIVEUSB=`lsblk | grep disk | awk '{ print $1 }' | grep sd | tail -1l`
 DEVUSB=/dev/$DRIVEUSB
 MANUFACTURER=`dmesg | grep usb | grep Manufacturer | grep -v Linux | awk '{ print $5" "$6 }' | tail -1l`
 PRODUCT=`dmesg | grep usb | grep Product: | grep -v Linux | awk '{ print $5" "$6 }' | tail -1l `
-SECTORS=`fdisk -l /dev/sda | head -1l | awk '{ print $6 }' | grep -o -E '[0-9]+'`
+SECTORS=`fdisk -l /dev/$DRIVEUSB | head -1l | awk '{ print $6 }' | grep -o -E '[0-9]+'`
 DETECTEDTYPE="INCONNU"
 # Test du type de clé 32GB Sandisk
 #if [ $MANUFACTURER = "SanDisk" ]
@@ -52,6 +52,9 @@ then DETECTEDTYPE="sandisk_ultra128_old"
 fi
 if [ $SECTORS = 240353280 ]
 then DETECTEDTYPE="sandisk_ultra128"
+fi
+if [ $SECTORS = 120127488 ]
+then DETECTEDTYPE="sandisk_ultra64"
 fi
 fi
 echo "Device USB: "$DEVUSB
