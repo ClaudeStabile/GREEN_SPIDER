@@ -77,7 +77,7 @@ else
 	echo "Creation de votre clé Free-Solutions OS..."
 	echo "Attention le temps d'execution est long voire très long..."
 	echo ""
-        curl -N -s https://www.free-solutions.ch/GREEN_SPIDER/5.0/GREEN_SPIDER_5.0.4OFFICIAL.dd.zst | unzstd -c | (pv -B32M -n -  > $DEVUSB  conv=notrunc,noerror) 2>&1 | dialog --title "Creation de Free-Solutions OS sur USB" --gauge "\nCréation Clé Free-Solutions OS en cours Veuillez patienter...\n\nBien attendre jusqu'au message :\n Votre clé Bootable Free-Solutions OS est prête à être bootée  ENJOY" 10 75 0 
+        curl -N -s https://www.free-solutions.ch/GREEN_SPIDER/GREEN_SPIDER_RELEASE/GREEN_SPIDER.dd.zst | unzstd -c | (pv -B32M -n -  > $DEVUSB  conv=notrunc,noerror) 2>&1 | dialog --title "Creation de Free-Solutions OS sur USB" --gauge "\nCréation Clé Free-Solutions OS en cours Veuillez patienter...\n\nBien attendre jusqu'au message :\n Votre clé Bootable Free-Solutions OS est prête à être bootée  ENJOY" 10 75 0 
 fi
 sync
 dialog --infobox "\nVotre clé Bootable Free-Solutions OS est prête à être bootée !!! ENJOY" 5 70 
