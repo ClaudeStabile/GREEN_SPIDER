@@ -25,6 +25,9 @@ kdialog --textinputbox "<h1>Free-Solutions OS - Easy USB Creator</h1><p>Veuillez
 if dpkg -l | grep "pv" | grep "pipeline" >/dev/null ; then kdialog --msgbox "Le package PV\n est déja installé" ; else kdialog --title "Installation du software PV" --warningcontinuecancel "Le Software  PV \n est manquant sur votre system\n PV software sera installé\n Cliquez Continue pour installer" && apt install -y pv && kdialog --msgbox "Le Software PV compression \n est installé" ; fi
 if [ $? = 2 ]; then exit ;fi
 #
+#apt install dialog
+if dpkg -l | grep "user-friendly dialog"  | grep -v whiptail >/dev/null ; then echo "Le package dialog est installé :)" ; else echo "INSTALLATION du package dialog" && apt install -y dialog ; fi
+#
 while [ ! -e /dev/sd[a-z] ] ; do kdialog --msgbox "<h1>Veuillez insérer une clef USB Sandisk 32GB ou +</h1>" && sleep 1 ; done
 #time curl -N -s https://www.free-solutions.ch/GREEN_SPIDER/4.0/GREEN_SPIDER_5.0.3.dd.gz | gunzip -c | pv -B32M >
 DRIVEUSB=`lsblk | grep disk | awk '{ print $1 }' | grep sd | tail -1l`
