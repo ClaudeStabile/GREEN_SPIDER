@@ -46,7 +46,7 @@ Je remercie par avance tous les contributeurs financiers ou autre, les soutiens 
 
 ## Quelques machines sous Free-Solutions OS
 
-[![PC & Mac sous Free-Solutions OS](https://github.com/ClaudeStabile/GREEN_SPIDER/PHOTOS_PC_MAC/imac27-core-i7-End2012.jpg)](https://github.com/ClaudeStabile/GREEN_SPIDER/tree/main/PHOTOS_PC_MAC)
+[![PC & Mac sous Free-Solutions OS](https://github.com/ClaudeStabile/GREEN_SPIDER/PHOTOS_PC_MAC/Acer.jpeg)](https://github.com/ClaudeStabile/GREEN_SPIDER/tree/main/PHOTOS_PC_MAC)
 
 ## Halte au Gaspi ! Stop aux déchets électroniques
 
