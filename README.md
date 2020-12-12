@@ -1,4 +1,7 @@
 # GREEN_SPIDER
+[![Install Free-Solutions OS Tablette mode Lenovo Yoga](https://img.youtube.com/vi/YDfDNqsuywQ/0.jpg)](https://www.youtube.com/watch?v=YDfDNqsuywQ)
+
+
 Free-Solutions OS - Creation clé USB à partir de la Distro au format .dd.gz
     o Script Bash & Kde de Création de Clé USB depuis Linux Ubuntu/Debian/Mint
     o Script pour Mac depuis MacOS ==> Free Solutions OS voir Script MacOS
