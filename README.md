@@ -1,6 +1,6 @@
 # GREEN_SPIDER / OS de remplacement pour PC & Mac
 Votre PC tourne intégralement sur une clé USB utilisable sur n'importe quel Laptop PC & Mac
-Adieu Windows, Adieu MacOS
+Adieu Windows & MacOS
 [![Install Free-Solutions OS Tablette mode Lenovo Yoga](https://img.youtube.com/vi/YDfDNqsuywQ/0.jpg)](https://www.youtube.com/watch?v=YDfDNqsuywQ)
 # Bonjour LINUX en toute facilité
 
