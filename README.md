@@ -44,6 +44,10 @@ Pour ceux qui ont fabriqué leur clé eux mêmes et donc rien payé, je fournis 
 La meilleure façon de soutenir l'idée et le projet est de nous acheter des clés prêtes à l'emploi. Vous pouvez aussi utiliser la clé et payer une contribution si vous aimez le concept et le produit. Il y a beaucoup d'heures de travail et de moyens nécessaires pour arriver à ce résultat. Je remercie tout ceux qui ont déjà fait l'acquisition d'une clé Free-Solutions OS. Des utilisateurs de 11 à 65ans avec tout type de profils et de hardware PC/Mac
 Je remercie par avance tous les contributeurs financiers ou autre, les soutiens et ceux qui m'ont aidé à faire connaître le concept. Vous avez des idées des business cases des projets ? Contactez nous, le concept a de nombreuses possibilités, avantages et énormément d'applications possibles.
 
+## Quelques machines sous Free-Solutions OS
+
+[![PC & Mac sous Free-Solutions OS](https://github.com/ClaudeStabile/GREEN_SPIDER/PHOTOS_PC_MAC/multipleLaptops.jpg)](https://github.com/ClaudeStabile/GREEN_SPIDER/tree/main/PHOTOS_PC_MAC)
+
 ## Halte au Gaspi ! Stop aux déchets électroniques
 
 Chaque semaine des millions de PC sont jetés non pas parce qu'ils sont HS mais à cause de leur lenteur et de leur OS impossible à mettre à jour et c'est dangereux ! Je pense que ne pas recycler ces machines est dangereux et criminel pour la planète. Free-Solutions OS est une solution qui est applicable immédiatement à toutes ces machines sans perte de fonctionnalités ni de performances et facilement
