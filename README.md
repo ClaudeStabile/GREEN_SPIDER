@@ -1,8 +1,8 @@
 # GREEN_SPIDER / OS de remplacement pour PC & Mac
 Votre PC tourne intégralement sur une clé USB utilisable sur n'importe quel Laptop PC & Mac
-Adieu Windows, Adieu MacOS Bonjour LINUX en toute facilité
+Adieu Windows, Adieu MacOS
 [![Install Free-Solutions OS Tablette mode Lenovo Yoga](https://img.youtube.com/vi/YDfDNqsuywQ/0.jpg)](https://www.youtube.com/watch?v=YDfDNqsuywQ)
-
+# Bonjour LINUX en toute facilité
 
 Free-Solutions OS - Creation clé USB à partir de la Distro au format .dd.gz
     o Script Bash & Kde de Création de Clé USB depuis Linux Ubuntu/Debian/Mint
