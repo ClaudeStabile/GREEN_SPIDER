@@ -28,6 +28,9 @@ Doc de démarrage USB de la clé Free-Solutions : https://www.free-solutions.ch/
 ### DISTRO : 
 Ceci n'est pas une Distro classique, un seul fichier contient l'ensemble de la Distribution. Il est possible de faire des mises à jour et installation de logiciels normalement sur la clé une fois bootée. Pour créer votre clé Bootable voir le WIKI ici : https://github.com/ClaudeStabile/GREEN_SPIDER/wiki/HOWTO-:-Scripts-de-cr%C3%A9ation-de-Cl%C3%A9-Free-Solutions-OS
 
+### DEGOOGLEISATION
+L'OS est livré avec un nabigateur maison basé sur une compilation récente su projet chromium et adapté à Free-Solutions OS
+
 ### Développeurs : 
 J'invite ceux qui veulent contribuer d'une manière ou d'une autre à faire évoluer le code de ce petit script. La distribution déployée sur la clé est la versions Suisse FR de Free-Solutions OS. Le mode de distribution de l'OS est basé sur un seul fichier qui contient l'intégralité de l'OS et des applications.
 On utilise et applique le paradoxe d'Unix "Everything is a file". C'est le même fichier .dd.gz qui constitue l'OS et qui est bootable sur Laptops Mac et PC. L'OS devient universel et non-installé c'est exactement le même OS qui tourne sur toutes les machines et ça change tout !
