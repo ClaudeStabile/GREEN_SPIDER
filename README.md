@@ -1,8 +1,17 @@
-# GREEN_SPIDER
+# GREEN_SPIDER / OS de remplacement pour PC & Mac
+Votre PC tourne intégralement sur une clé USB utilisable sur n'importe quel Laptop PC & Mac
+Adieu Windows & MacOS
+
+[![Install Free-Solutions OS Tablette mode Lenovo Yoga](https://img.youtube.com/vi/YDfDNqsuywQ/0.jpg)](https://www.youtube.com/watch?v=YDfDNqsuywQ)
+# Bonjour LINUX en toute facilité
+
 Free-Solutions OS - Creation clé USB à partir de la Distro au format .dd.gz
     o Script Bash & Kde de Création de Clé USB depuis Linux Ubuntu/Debian/Mint
-    o Script pour Mac depuis MacOS ==> Free Solutions OS
-    o Procédure pour Windows ==> Free Solutions OS 
+    o Script pour Mac depuis MacOS ==> Free Solutions OS voir Script MacOS
+    o Procédure pour Windows ==> Free Solutions OS Voir Wiki
+        
+[![Install Free-Solutions OS avec CreateFSZST.sh](https://img.youtube.com/vi/DevP4EwdSRY/0.jpg)](https://www.youtube.com/watch?v=DevP4EwdSRY)
+    
 
 ## Limitations : 
 Installe uniquement la version Suisse FR. La même technologie peut être mise en oeuvre pour produire et délivrer votre OS privé pour votre entreprise. Et oui contrairement aux idées reçues il n'est pas compliqué de se fabriquer son propre OS dédié à votre business et utilisable sur la totalité des postes de l'entreprise. Si cette approche vous intéresse, Free-Solutions Sàrl vous aide à créer votre OS privé. Cette approche vous permettra de conserver vos PC beaucoup plus longtemps en toute sécurité car ils fonctionnent avec un OS récent basé sur Ubuntu 20.04 LTS. 
@@ -17,7 +26,10 @@ Je vous invite à utiliser l'OS tel qu'il est dans un premier temps, vous devrie
 Doc de démarrage USB de la clé Free-Solutions : https://www.free-solutions.ch/clearspace/servlet/JiveServlet/downloadBody/3815-102-2-4840/LettreFS_avec_clef.pdf
 
 ### DISTRO : 
-Ceci n'est pas une Distro classique, un seul fichier contient l'ensemble de la Distribution. Il est possible de faire des mises à jour et installation de logiciels normalement sur la clé une fois bootée
+Ceci n'est pas une Distro classique, un seul fichier contient l'ensemble de la Distribution. Il est possible de faire des mises à jour et installation de logiciels normalement sur la clé une fois bootée. Pour créer votre clé Bootable voir le WIKI ici : https://github.com/ClaudeStabile/GREEN_SPIDER/wiki/HOWTO-:-Scripts-de-cr%C3%A9ation-de-Cl%C3%A9-Free-Solutions-OS
+
+### DEGOOGLELISATION
+L'OS est livré avec un navigateur maison basé sur une compilation récente su projet chromium et adapté à Free-Solutions OS
 
 ### Développeurs : 
 J'invite ceux qui veulent contribuer d'une manière ou d'une autre à faire évoluer le code de ce petit script. La distribution déployée sur la clé est la versions Suisse FR de Free-Solutions OS. Le mode de distribution de l'OS est basé sur un seul fichier qui contient l'intégralité de l'OS et des applications.
@@ -35,6 +47,10 @@ Pour ceux qui ont fabriqué leur clé eux mêmes et donc rien payé, je fournis 
 ## Votre soutien au projet
 La meilleure façon de soutenir l'idée et le projet est de nous acheter des clés prêtes à l'emploi. Vous pouvez aussi utiliser la clé et payer une contribution si vous aimez le concept et le produit. Il y a beaucoup d'heures de travail et de moyens nécessaires pour arriver à ce résultat. Je remercie tout ceux qui ont déjà fait l'acquisition d'une clé Free-Solutions OS. Des utilisateurs de 11 à 65ans avec tout type de profils et de hardware PC/Mac
 Je remercie par avance tous les contributeurs financiers ou autre, les soutiens et ceux qui m'ont aidé à faire connaître le concept. Vous avez des idées des business cases des projets ? Contactez nous, le concept a de nombreuses possibilités, avantages et énormément d'applications possibles.
+
+## Quelques machines sous Free-Solutions OS
+
+[![PC & Mac sous Free-Solutions OS](https://github.com/ClaudeStabile/GREEN_SPIDER/blob/main/PHOTOS_PC_MAC/imac27-core-i7-End2012small.jpg)](https://github.com/ClaudeStabile/GREEN_SPIDER/tree/main/PHOTOS_PC_MAC)
 
 ## Halte au Gaspi ! Stop aux déchets électroniques
 
