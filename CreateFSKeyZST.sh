@@ -21,6 +21,7 @@ fi
 # Install et check package pv
 #
 if dpkg -l | grep "pv" | grep "pipeline" >/dev/null ; then echo "Le package pv est installé :)" ; else echo "INSTALLATION du package pv" && apt install -y pv ; fi
+if dpkg -l | grep "curl" | grep "pipeline" >/dev/null ; then echo "Le package curl est installé :)" ; else echo "INSTALLATION du package curl" && apt install -y curl; fi
 #apt install dialog
 if dpkg -l | grep "user-friendly dialog"  | grep -v whiptail >/dev/null ; then echo "Le package dialog est installé :)" ; else echo "INSTALLATION du package dialog" && apt install -y dialog ; fi
 if dpkg -l | grep "zstd" | grep -v libzstd1 >/dev/null ; then echo "Le package zstd est installé :)" ; else echo "INSTALLATION du package zstd" && apt install -y zstd ; fi
@@ -55,6 +56,9 @@ then DETECTEDTYPE="sandisk_ultra128"
 fi
 if [ $SECTORS = 120127488 ]
 then DETECTEDTYPE="sandisk_ultra64"
+fi
+if [ $SECTORS = 488374272 ]
+then DETECTEDTYPE="sandisk_ultra128"
 fi
 fi
 echo "Device USB: "$DEVUSB
