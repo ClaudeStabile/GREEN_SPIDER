@@ -6,7 +6,7 @@ Adieu Windows & MacOS
 # Bonjour LINUX en toute facilité
 
 Free-Solutions OS - Creation clé USB à partir de la Distro au format .dd.gz
-    o Script Bash & Kde de Création de Clé USB depuis Linux Ubuntu/Debian/Mint
+    o Script Bash & KDE de Création de Clé USB depuis Linux Ubuntu/Debian/Mint
     o Script pour Mac depuis MacOS ==> Free Solutions OS voir Script MacOS
     o Procédure pour Windows ==> Free Solutions OS Voir Wiki
         
