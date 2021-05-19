@@ -1,6 +1,6 @@
 #!/bin/bash 
 #
-# Creation de clé Free-Solutions OS bash
+# Création de clé Free-Solutions OS bash
 #
 # Necesssite curl, pv , unzstd
 # Gain 1623MB de moins 
