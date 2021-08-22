@@ -2,7 +2,7 @@
 Votre PC tourne intégralement sur une clé USB utilisable sur n'importe quel Laptop PC & Mac
 Adieu Windows & MacOS
 
-# Bonjour LINUX en toute facilité, Cliquez et testez notre PC Cloud Live
+# Bonjour LINUX en toute facilité, Cliquez et testez notre PC Cloud
 [![Install Essayez Free-Solutions OS sur le Cloud](https://www.free-solutions.ch/clearspace/images/co-computing.png)](https://green-spider.free-solutions.org:8443)
 
 [![Install Free-Solutions OS Tablette mode Lenovo Yoga](https://img.youtube.com/vi/YDfDNqsuywQ/0.jpg)](https://www.youtube.com/watch?v=YDfDNqsuywQ)
