@@ -4,6 +4,8 @@ Adieu Windows & MacOS
 
 [![Install Free-Solutions OS Tablette mode Lenovo Yoga](https://img.youtube.com/vi/YDfDNqsuywQ/0.jpg)](https://www.youtube.com/watch?v=YDfDNqsuywQ)
 # Bonjour LINUX en toute facilité
+[![Install Essayez Free-Solutions OS sur le Cloud]
+(https://green-spider.free-solutions.org:8443)](https://green-spider.free-solutions.org:8443)
 
 Free-Solutions OS - Creation clé USB à partir de la Distro au format .dd.gz
     o Script Bash & KDE de Création de Clé USB depuis Linux Ubuntu/Debian/Mint
