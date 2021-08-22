@@ -2,10 +2,10 @@
 Votre PC tourne intégralement sur une clé USB utilisable sur n'importe quel Laptop PC & Mac
 Adieu Windows & MacOS
 
-[![Install Free-Solutions OS Tablette mode Lenovo Yoga](https://img.youtube.com/vi/YDfDNqsuywQ/0.jpg)](https://www.youtube.com/watch?v=YDfDNqsuywQ)
-# Bonjour LINUX en toute facilité
+# Bonjour LINUX en toute facilité, Cliquez et testez notre PC Cloud Live
 [![Install Essayez Free-Solutions OS sur le Cloud](https://www.free-solutions.ch/clearspace/images/co-computing.png)](https://green-spider.free-solutions.org:8443)
 
+[![Install Free-Solutions OS Tablette mode Lenovo Yoga](https://img.youtube.com/vi/YDfDNqsuywQ/0.jpg)](https://www.youtube.com/watch?v=YDfDNqsuywQ)
 Free-Solutions OS - Creation clé USB à partir de la Distro au format .dd.gz
     o Script Bash & KDE de Création de Clé USB depuis Linux Ubuntu/Debian/Mint
     o Script pour Mac depuis MacOS ==> Free Solutions OS voir Script MacOS
