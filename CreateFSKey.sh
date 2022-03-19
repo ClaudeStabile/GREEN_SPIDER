@@ -5,22 +5,42 @@
 # Nécesssite curl, pv, dialog, gzip
 # 
 
-# Valid usb key brands
-KEYS=$(echo -e "Corsair\nSanDisk")
+# Clear screen and show purpose
+clear
+cat << !EOF
+Ce programme va créer une clé USB de démarrage d'un ordimateur
+Après démarrage de l'ordinateur depuis cette clé USB, un environnement
+	graphique sous Linux est mis à la disposition de l'utilisateur
 
+!!! N'introduisez la clé USB que lorsque le programme le demande !!!
+
+Merci de suivre les autres instructions à l'écran svp
+
+!EOF
+
+# some testing first : need to be superuser or executed as sudo & check Linux distrib
 if [ $(id -u) -ne 0 ]; then
         echo "Ce programme nécessite des accès privilégiés."
         echo "Redémarrez ce programme avec sudo ou en temps qu'utilisateur 'root'"
         exit
 fi
+
+LINUX_DISTRIB=$(grep DISTRIB_ID /etc/*release | uniq | cut -d'=' -f2 | cut -d' ' -f1)
+case ${LINUX_DISTRIB} in
+	Ubuntu)	;;
+	Debian) ;;
+	*)	echo "Ce programme n'est testé que sur Debian, Ubuntu et dérivés (Kubuntu, etc)"
+		echo "Réessayez ultérieurement svp"
+		exit
+		;;
+esac
+
 if [ "X${XDG_RUNTIME_DIR}" = "X" ]; then
         if [ ! -d /tmp/runtime-root ]; then
                 mkdir  /tmp/runtime-root
         fi
         export XDG_RUNTIME_DIR=/tmp/runtime-root
 fi
-
-clear
 
 #
 # Check, and if necessary, install packages 'pv', 'dialog', 'curl' and 'gzip'
@@ -49,82 +69,57 @@ fi
 #
 # Detect the key to be created ...
 #
-echo "Recherche de la clé ..."
-NBUSB=$(lsusb | grep -e "${KEYS}" | wc -l)
-while [ ${NBUSB} -ne 1 ]; do
-	if [ ${NBUSB} -gt 1 ]; then
-		echo "Trouvé plusieurs clés USB ! Retirez la(les) clé(s) en trop svp"
-	else
-		echo "Branchez une clé USB Sandisk Ultrafit ou une clé Corsair Padlock svp"
-	fi
-	sleep 1
-	NBUSB=$(lsusb | grep -e "${KEYS}" | wc -l)
+(udevadm monitor -u --subsystem-match=block > udev.monitor &)
+echo -e "\nIntroduisez une clé USB dans un slot libre svp..."
+KEY=$(grep add udev.monitor | sed 's/.*\/block\///' | cut -d'/' -f1 | cut -d' ' -f1 | uniq)
+while [ "X${KEY}" == "X" ]; do
+	sleep 2
+	echo "Introduisez une clé USB dans un slot libre svp..."
+	KEY=$(grep add udev.monitor | sed 's/.*\/block\///' | cut -d'/' -f1 | cut -d' ' -f1 | uniq)
 done
-sleep 2		# Key found, leave a bit of time for the key to be reachable !
+
+kill $(ps -ea | grep udevadm | sed 's/^ *//' | cut -d' ' -f1)
+rm udev.monitor
+
+NBUSB=$(echo -e "${KEY}" | wc -l)
+if [ ${NBUSB} -ne 1 ]; then
+	echo "Trouvé plusieurs clés USB !"
+	echo "Retirez la(les) clé(s) en trop et recommencez le processus svp"
+	exit
+fi
 
 #
-# Find the drive where the key is inserted
+# Find iand display the details about the inserted USB key
 #
-MANUFACTURER=$(lsblk -o NAME,VENDOR | grep -e "${KEYS}" | awk '{ print $2 }')
-DEVUSB=/dev/$(lsblk -o NAME,VENDOR 2>/dev/null | grep -e "${KEYS}" | awk '{ print $1 }')
-
-#
-# Find details about the key
-#
-PRODUCT=$(lsblk -o MODEL ${DEVUSB} | sed '/^$/d' | grep -v MODEL)
+DEVUSB=/dev/${KEY}
+MANUFACTURER=$(lsblk -o VENDOR,TYPE ${DEVUSB} | grep disk | awk '{ print $1 }')
+PRODUCT=$(lsblk -o MODEL,TYPE ${DEVUSB} | grep disk | awk '{ print $1 }')
+SIZE=$(lsblk -o SIZE,TYPE ${DEVUSB} | grep disk | awk '{ print $1 }')
 SECTORS=$(fdisk -l ${DEVUSB} 2>/dev/null | grep ${DEVUSB} | awk '{ print $7 }' | head -1)
 
-DETECTEDTYPE="Inconnu"
-case "${MANUFACTURER}" in
-	"SanDisk")
-		case ${SECTORS} in
-		60062500)
-			DETECTEDTYPE="ultra32_old";;
-		60063744)
-			DETECTEDTYPE="ultra32";;
-		60088320)
-			DETECTEDTYPE="Ultra 32 GB";;
-		120127488)
-			DETECTEDTYPE="Ultra 64 GB";;
-		240353280)
-			DETECTEDTYPE="Ultra 128 GB";;
-		242614272)
-			DETECTEDTYPE="Ultra 128 GB";;
-		488374272)
-			DETECTEDTYPE="Ultra 256 GB";;
-		esac;;
-	"Corsair")
-		case ${SECTORS} in
-		60518400)
-			DETECTEDTYPE="32 GB";;
-		120913920)
-			DETECTEDTYPE="64 GB";;
-		esac;;
-esac
+echo -e "\nLes caractéristiques de la clé USB insérée sont les suivantes :"
+echo -e "\tPériphérique USB : "${DEVUSB}
+echo -e "\tFabricant        : "${MANUFACTURER}
+echo -e "\tProduit          : "${PRODUCT}
+echo -e "\tCapacité         : "${SIZE}
+echo -e "\tSecteurs         : "${SECTORS}
 
-echo "Périphérique USB : "${DEVUSB}
-echo "Fabricant        : "${MANUFACTURER}
-echo "Produit          : "${PRODUCT}
-echo "Modèle           : "${DETECTEDTYPE}
-
-#
-# Discard old key models, they don't have enough capacity ...
-# Il nous faut au minimum 60088320 secteurs de 512, les anciennes clés Sandisk 32GB ne fonctioneront pas
-#
-if [ "${DETECTEDTYPE}" = "Inconnu" ]; then
-	echo "Modèle de clé inconnu : merci d'utiliser un modèle supporté par le programme"
-	exit
-fi
-if [ "${DETECTEDTYPE}" = "ultra32_old" ] || [ "${DETECTEDTYPE}" = "ultra32" ]; then
-	echo "Clé Sandisk ancienne : merci d'utiliser un modèle plus récent de Sandisk Ultra 32GB"
+if [ ${SECTORS} -lt 60062500 ]; then
+	echo -e "\nCette clé n'a pas la capacité suffisante pour installer Linux dessus"
+	echo "La capacité MINIMALE de la clé doit être de 32GB"
+	echo "Abandon de la procédure de création de clé"
 	exit
 fi
 
-printf "\nVous allez démarrer la création de votre clef USB Free-Solutions OS"
-printf "\nVous avez besoin d'une très bonne connection Internet, sans interruptions"
-printf "\nAUCUN FICHIER n'est chargé sur votre machine, le code est directement écrit depuis Internet sur la clé USB\n\n"
+cat << !EOF
 
-read -p "Continuer et effacer intégralement ${DEVUSB} (O/N) ? "
+Vous allez démarrer la création de votre clef USB Free-Solutions OS
+Vous avez besoin d'une très bonne connection Internet, sans interruptions
+AUCUN FICHIER n'est chargé sur votre machine, le code est directement écrit depuis Internet sur la clé USB
+
+!EOF
+
+read -p "Continuer et effacer intégralement la clé ${MANUFACTURER} ${PRODUCT} ${SIZE} sur ${DEVUSB} (O/N) ? "
 if [ "$REPLY" != "O" ]; then
 	echo "Abandon de la procédure de création de clé"
 	exit
