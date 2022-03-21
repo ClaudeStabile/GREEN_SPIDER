@@ -25,15 +25,21 @@ if [ $(id -u) -ne 0 ]; then
         exit
 fi
 
-LINUX_DISTRIB=$(grep DISTRIB_ID /etc/*release | uniq | cut -d'=' -f2 | cut -d' ' -f1)
-case ${LINUX_DISTRIB} in
-	Ubuntu)	;;
-	Debian) ;;
-	*)	echo "Ce programme n'est testé que sur Debian, Ubuntu et dérivés (Kubuntu, etc)"
-		echo "Réessayez ultérieurement svp"
-		exit
-		;;
-esac
+if [ -f /etc/os-release ]; then
+	LINUX_DISTRIB=$(grep PRETTY_NAME /etc/os-release | cut -d'"' -f2 | cut -d' ' -f1)
+	case ${LINUX_DISTRIB} in
+		Ubuntu)	;;
+		Debian) ;;
+		*)	echo -e "\nCe programme n'est testé que sur Debian, Ubuntu et dérivés (Kubuntu, etc)"
+			echo "Merci de communiquer le problème au développeur"
+			exit
+			;;
+	esac
+else
+	echo -e "\nVersion Linux inconnue. Le programme ne peut s'exécuter correctement)"
+	echo "Merci de communiquer le problème au développeur"
+	exit
+fi
 
 if [ "X${XDG_RUNTIME_DIR}" = "X" ]; then
         if [ ! -d /tmp/runtime-root ]; then
