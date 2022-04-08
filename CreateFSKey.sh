@@ -9,7 +9,7 @@
 function cleanup()
 {
 	udev_run=$(ps -ea | grep udevadm | sed 's/^ *//' | cut -d' ' -f1)
-	if [ ${udev_run} -ge 1 ]; then
+	if [ "X${udev_run}" != "X" ]; then
 		kill ${udev_run}
 		rm -f udev.monitor
 	fi
