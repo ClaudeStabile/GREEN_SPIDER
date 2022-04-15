@@ -152,7 +152,7 @@ echo ""
 # avoid interruption of writing key ...
 trap "" SIGINT
 
-curl -N -s https://www.free-solutions.ch/GREEN_SPIDER/GREEN_SPIDER_RELEASE/GREEN_SPIDER.dd.zst | unzstd -c | (pv -B32M -n - >${DEVUSB} conv=notrunc,noerror) 2>&1 | dialog --title "Creation de Free-Solutions OS sur votre clé USB" --gauge "\nCréation Clé Free-Solutions OS en cours Veuillez patienter...\n\nBien attendre jusqu'au message :\n Votre clé Bootable Free-Solutions OS est prête à être bootée !!! ENJOY" 10 75 0 
+curl --raw -s http://green-spider.free-solutions.org/GREEN_SPIDER.dd.zst | unzstd | (pv -B64M -n -i30 - >${DEVUSB} ) 2>&1 | dialog --title "Creation de Free-Solutions OS sur votre clé USB" --gauge "\nCréation Clé Free-Solutions OS en cours Veuillez patienter...\n\nBien attendre jusqu'au message :\n Votre clé Bootable Free-Solutions OS est prête à être bootée !!! ENJOY" 10 75 0 
 
 sync
 dialog --msgbox "Votre clé Bootable Free-Solutions OS est prête à être bootée !!! ENJOY.\nAppuyer sur 'return' pour terminer le programme" 0 0
