@@ -17,8 +17,7 @@ URL Distro : http://green-spider.free-solutions.org/GREEN_SPIDER.dd.gz
 ## Limitations : 
 Installe uniquement la version Suisse FR. La même technologie peut être mise en oeuvre pour produire et délivrer votre OS privé pour votre entreprise. Et oui contrairement aux idées reçues il n'est pas compliqué de se fabriquer son propre OS dédié à votre business et utilisable sur la totalité des postes de l'entreprise. Si cette approche vous intéresse, Free-Solutions Sàrl vous aide à créer votre OS privé. Cette approche vous permettra de conserver vos PC beaucoup plus longtemps en toute sécurité car ils fonctionnent avec un OS récent basé sur Ubuntu 20.04 LTS. 
 
-## ATTENTION !!! : 
-L'utilisation de ce script est à vos risques et périls. Assurez vous de ne pas effacer le mauvais disque !!!
+## Commande de clés prêtes à l'emploi !!! : 
 J'invite ceux qui ne sont pas à l'aise avec ce type de commande et de manipulation à nous commander une clé USB Free-Solutions OS pour être sûr du résultat
 Pour commander une clé Free-Solutions OS 32GB ou 128GB : https://www.free-solutions.ch Assistance au Boot Via VidCall si nécessaire 30mn.
 
