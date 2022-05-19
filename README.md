@@ -1,11 +1,10 @@
 # GREEN_SPIDER / OS de remplacement pour PC & Mac
 Votre PC tourne intégralement sur une clé USB utilisable sur n'importe quel Laptop PC & Mac
-![20211204_180019](https://user-images.githubusercontent.com/29485972/144718801-714c4e34-d671-41d9-a299-7866ed7f9810.jpg)
 
 # Fabrication clé USB Free-Solutions OS
 La méthode que je recommande maintenant c'est d'utiliser Balena Etcher https://www.balena.io/etcher/ pour fabriquer votre clé, voir cette vidéo. Les scripts ne sont plus utiles.[![pc3dscreentouchtexte](https://user-images.githubusercontent.com/29485972/169356887-c113f146-f597-4f07-a954-35191da7a3a6.png)](https://www.free-solutions.ch/VIDEOS_FRAME/Free-Solutions-OS-newvid.webm)
 
-Vous pouvez maintenant créer une clé directement depuis Windows, MacOS ou Linux et rebooter directement dessus![screenshot5](https://user-images.githubusercontent.com/29485972/169363808-b38184cb-cc2f-4de8-af3d-8f14bcdd20b0.png)
+Vous pouvez maintenant créer une clé directement depuis Windows, MacOS ou Linux et rebooter directement dessus
 
 
 Cliquez sur l'image ci-dessus pour une vidéo explicative
@@ -42,7 +41,7 @@ Avec ce projet 2 scripts sont à disposition un pour Kde avec quelques DialBox e
 ## Support Consulting & Contact (Payant)
 Merci de vous inscrire sur https://www.free-solutions.org/pade 
 Une fois inscrit, vous pouvez me Tchatter directement mon JID est claude@www.free-solutions.org
-
+![screenshot5](https://user-images.githubusercontent.com/29485972/169363808-b38184cb-cc2f-4de8-af3d-8f14bcdd20b0.png)
 
 Free-Solutions fabrique aussi en volume ce type de clé jusque 500/jour et peut rapidement répondre à des besoins massifs. On produit aussi des masters de clés pour les entreprises qui désirent s'affranchir de Windows et utiliser un OS universel et transportable. C'est aussi la manière la plus sûre de déjouer les piratages et attaques. Il n'est pas facile de pirater des machines qui ne contienent aucun OS et dont l'OS est apporté par l'utilisateur. Ca devrait faire réfléchir. L'approche de 100% de Windows sur les postes de travail expose vos ordinateurs à une menace permanente. Si vous changez l'approche, les pirates seront bien ennuyés et dans l'impossibilité de nuire à votre IT. Les pirates exploitent des failles connues d'un certain OS très vulnérable. Vous voulez en sortir ? Contactez-nous, et essayez une autre vision de l'IT
 ## Boot USB assistance via VidConf : 50CHF
