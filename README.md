@@ -6,6 +6,7 @@ Votre PC tourne intégralement sur une clé USB utilisable sur n'importe quel La
 La méthode que je recommande maintenant c'est d'utiliser Balena Etcher https://www.balena.io/etcher/ pour fabriquer votre clé, voir cette vidéo. Les scripts ne sont plus utiles.[![pc3dscreentouchtexte](https://user-images.githubusercontent.com/29485972/169356887-c113f146-f597-4f07-a954-35191da7a3a6.png)](https://www.free-solutions.ch/VIDEOS_FRAME/Free-Solutions-OS-newvid.webm)
 
 Vous pouvez maintenant créer une clé directement depuis Windows, MacOS ou Linux et rebooter directement dessus
+
 Cliquez sur l'image ci-dessus pour une vidéo explicative
 
 URL Distro : http://green-spider.free-solutions.org/GREEN_SPIDER.dd.gz
