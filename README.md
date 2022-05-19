@@ -1,6 +1,6 @@
 # GREEN_SPIDER / OS de remplacement pour PC & Mac
 Votre PC tourne intégralement sur une clé USB utilisable sur n'importe quel Laptop PC & Mac
-
+![Macbookmichel](https://user-images.githubusercontent.com/29485972/169364555-d568acb4-85bd-4265-b673-47541ffd58f7.jpeg)
 # Fabrication clé USB Free-Solutions OS
 La méthode que je recommande maintenant c'est d'utiliser Balena Etcher https://www.balena.io/etcher/ pour fabriquer votre clé, voir cette vidéo. Les scripts ne sont plus utiles.[![pc3dscreentouchtexte](https://user-images.githubusercontent.com/29485972/169356887-c113f146-f597-4f07-a954-35191da7a3a6.png)](https://www.free-solutions.ch/VIDEOS_FRAME/Free-Solutions-OS-newvid.webm)
 
