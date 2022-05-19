@@ -7,7 +7,7 @@ Votre PC tourne intégralement sur une clé USB utilisable sur n'importe quel La
 # Bonjour LINUX en toute facilité, Cliquez et testez notre PC Cloud
 [![Install Essayez Free-Solutions OS sur le Cloud](https://www.free-solutions.ch/clearspace/images/co-computing.png)](https://green-spider.free-solutions.org:8443)
 # Fabrication clé USB Free-Solutions OS
-La méthode que je recommande maintenant c'est d'utiliser Balena Etcher pour fabriquer votre clé, voir cette vidéo. Les scripts ne sont plus utiles.
+La méthode que je recommande maintenant c'est d'utiliser Balena Etcher https://www.balena.io/etcher/ pour fabriquer votre clé, voir cette vidéo. Les scripts ne sont plus utiles.
 Vous pouvez maintenant créer une clé directement depuis Windows, MacOS ou Linux et rebooter directement dessus
 [![Fabriquez votre clé Free-Solutions OS ](https://www.free-solutions.ch/VIDEOS_FRAME/createkeybalena.png)](https://www.free-solutions.ch/VIDEOS_FRAME/Free-Solutions-OS-newvid.webm)
 URL Distro : http://green-spider.free-solutions.org/GREEN_SPIDER.dd.gz
