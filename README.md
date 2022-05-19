@@ -7,15 +7,11 @@ Votre PC tourne intégralement sur une clé USB utilisable sur n'importe quel La
 # Bonjour LINUX en toute facilité, Cliquez et testez notre PC Cloud
 [![Install Essayez Free-Solutions OS sur le Cloud](https://www.free-solutions.ch/clearspace/images/co-computing.png)](https://green-spider.free-solutions.org:8443)
 
-[![Install Free-Solutions OS Tablette mode Lenovo Yoga](https://img.youtube.com/vi/YDfDNqsuywQ/0.jpg)](https://www.youtube.com/watch?v=YDfDNqsuywQ)
+# Fabrication clé USB Free-Solutions OS
 
-Free-Solutions OS - Creation clé USB à partir de la Distro au format .dd.gz
-    o Script Bash & KDE de Création de Clé USB depuis Linux Ubuntu/Debian/Mint
-    o Script pour Mac depuis MacOS ==> Free Solutions OS voir Script MacOS
-    o Procédure pour Windows ==> Free Solutions OS Voir Wiki
-        
-[![Install Free-Solutions OS avec CreateFSZST.sh](https://img.youtube.com/vi/DevP4EwdSRY/0.jpg)](https://www.youtube.com/watch?v=DevP4EwdSRY)
-    
+[![Fabriquez votre clé Free-Solutions OS ](https://www.free-solutions.ch/VIDEOS_FRAME/createkeybalena.png)](https://www.free-solutions.ch/VIDEOS_FRAME/Free-Solutions-OS-newvid.webm)
+
+[![Install Free-Solutions OS Tablette mode Lenovo Yoga](https://img.youtube.com/vi/YDfDNqsuywQ/0.jpg)](https://www.youtube.com/watch?v=YDfDNqsuywQ)
 
 ## Limitations : 
 Installe uniquement la version Suisse FR. La même technologie peut être mise en oeuvre pour produire et délivrer votre OS privé pour votre entreprise. Et oui contrairement aux idées reçues il n'est pas compliqué de se fabriquer son propre OS dédié à votre business et utilisable sur la totalité des postes de l'entreprise. Si cette approche vous intéresse, Free-Solutions Sàrl vous aide à créer votre OS privé. Cette approche vous permettra de conserver vos PC beaucoup plus longtemps en toute sécurité car ils fonctionnent avec un OS récent basé sur Ubuntu 20.04 LTS. 
