@@ -10,6 +10,7 @@ Votre PC tourne intégralement sur une clé USB utilisable sur n'importe quel La
 La méthode que je recommande maintenant c'est d'utiliser Balena Etcher pour fabriquer votre clé, voir cette vidéo. Les scripts ne sont plus utiles.
 Vous pouvez maintenant créer une clé directement depuis Windows, MacOS ou Linux et rebooter directement dessus
 [![Fabriquez votre clé Free-Solutions OS ](https://www.free-solutions.ch/VIDEOS_FRAME/createkeybalena.png)](https://www.free-solutions.ch/VIDEOS_FRAME/Free-Solutions-OS-newvid.webm)
+URL Distro : http://green-spider.free-solutions.org/GREEN_SPIDER.dd.gz
 
 [![Install Free-Solutions OS Tablette mode Lenovo Yoga](https://img.youtube.com/vi/YDfDNqsuywQ/0.jpg)](https://www.youtube.com/watch?v=YDfDNqsuywQ)
 
