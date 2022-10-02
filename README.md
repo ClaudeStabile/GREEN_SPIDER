@@ -8,6 +8,7 @@ Vous pouvez maintenant créer une clé directement depuis Windows, MacOS ou Linu
 
 
 Cliquez sur l'image ci-dessus pour une vidéo explicative
+Vidéo de creation d'un clé USB avec Balena Etcher
 
 URL Distro : http://green-spider.free-solutions.org/GREEN_SPIDER.dd.gz
 # Adieu Windows & MacOS
