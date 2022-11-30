@@ -12,7 +12,7 @@ Cliquez sur l'image ci-dessus pour une vidéo explicative à regarder jusqu'à l
 
 URL Distro : http://green-spider.free-solutions.org/GREEN_SPIDER.dd.gz
 # Adieu Windows & MacOS
-# Bonjour LINUX en toute facilité, Cliquez et testez notre PC Cloud[![screenshot6](https://user-images.githubusercontent.com/29485972/169366593-6002d501-2b41-4760-afff-c18f10d9bb91.png)](https://green-spider.free-solutions.org:8443)
+# Bonjour LINUX en toute facilité, Cliquez et testez notre PC Cloud[![screenshot6](https://user-images.githubusercontent.com/29485972/169366593-6002d501-2b41-4760-afff-c18f10d9bb91.png)](https://green-spider.free-solutio![headerqrmastodon](https://user-images.githubusercontent.com/29485972/204859030-9b78e09f-80a2-477d-aaa0-291e00fe5caa.png)](https://mastodon.free-solutions.org)ns.org:8443)
 
 ## Limitations : 
 Installe uniquement la version Suisse FR. La même technologie peut être mise en oeuvre pour produire et délivrer votre OS privé pour votre entreprise. Et oui contrairement aux idées reçues il n'est pas compliqué de se fabriquer son propre OS dédié à votre business et utilisable sur la totalité des postes de l'entreprise. Si cette approche vous intéresse, Free-Solutions Sàrl vous aide à créer votre OS privé. Cette approche vous permettra de conserver vos PC beaucoup plus longtemps en toute sécurité car ils fonctionnent avec un OS récent basé sur Ubuntu 20.04 LTS. 
@@ -45,6 +45,15 @@ Une fois inscrit, vous pouvez me Tchatter directement mon JID est claude@www.fre
 Free-Solutions fabrique aussi en volume ce type de clé jusque 500/jour et peut rapidement répondre à des besoins massifs. On produit aussi des masters de clés pour les entreprises qui désirent s'affranchir de Windows et utiliser un OS universel et transportable. C'est aussi la manière la plus sûre de déjouer les piratages et attaques. Il n'est pas facile de pirater des machines qui ne contienent aucun OS et dont l'OS est apporté par l'utilisateur. Ca devrait faire réfléchir. L'approche de 100% de Windows sur les postes de travail expose vos ordinateurs à une menace permanente. Si vous changez l'approche, les pirates seront bien ennuyés et dans l'impossibilité de nuire à votre IT. Les pirates exploitent des failles connues d'un certain OS très vulnérable. Vous voulez en sortir ? Contactez-nous, et essayez une autre vision de l'IT
 ## Boot USB assistance via VidConf : 50CHF
 Pour ceux qui ont fabriqué leur clé eux mêmes et donc rien payé, je fournis volontiers aide au boot USB via visioconf facturable 50CHF. Ceux qui ont fait l'acquisition d'une clé bénéficient de ce service gratuitement si nécessaire.
+
+## Ces sujets vous intéressent ? ##
+
+Alors rejoignez nous sur MASTODON Free-Solutions en 3 minutes
+Allez sur https://mastodon.free-solutions.org avec votre mobile, ordinateur et votre Navigateur par défaut Iphone,Android,et /e/ avec brave
+
+Inscrivez vous renseignez votre profil et suivez moi en cliquant ici : https://mastodon.free-solutions.org/@claude
+
+[![screenshot38](https://user-images.githubusercontent.com/29485972/204862089-3910df15-8480-4270-9c0d-ad64f5816a8e.png)](https://mastodon.free-solutions.org)
 
 ## Votre soutien au projet
 La meilleure façon de soutenir l'idée et le projet est de nous acheter des clés prêtes à l'emploi. Vous pouvez aussi utiliser la clé et payer une contribution si vous aimez le concept et le produit. Il y a beaucoup d'heures de travail et de moyens nécessaires pour arriver à ce résultat. Je remercie tout ceux qui ont déjà fait l'acquisition d'une clé Free-Solutions OS. Des utilisateurs de 11 à 65ans avec tout type de profils et de hardware PC/Mac
