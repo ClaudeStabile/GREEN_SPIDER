@@ -14,7 +14,7 @@ Cliquez sur l'image ci-dessus pour une vidéo explicative à regarder jusqu'à l
 
 URL Distro : http://green-spider.free-solutions.org/GREEN_SPIDER.dd.gz
 # Adieu Windows & MacOS
-# Bonjour LINUX en toute facilité, Cliquez et testez notre PC Cloud[![screenshot6](https://user-images.githubusercontent.com/29485972/169366593-6002d501-2b41-4760-afff-c18f10d9bb91.png)](https://green-spider.free-solutio![headerqrmastodon](https://user-images.githubusercontent.com/29485972/204859030-9b78e09f-80a2-477d-aaa0-291e00fe5caa.png)](https://mastodon.free-solutions.org)ns.org:8443)
+# Bonjour LINUX en toute facilité, Cliquez et testez notre PC Cloud[![screenshot6](https://user-images.githubusercontent.com/29485972/169366593-6002d501-2b41-4760-afff-c18f10d9bb91.png)](https://green-spider.free-solutio![headerqrmastodon](https://user-images.githubusercontent.com/29485972/204859030-9b78e09f-80a2-477d-aaa0-291e00fe5caa.png)](https://green-spider.free-solutions.org:8443)
 
 ## Limitations : 
 Installe uniquement la version Suisse FR. La même technologie peut être mise en oeuvre pour produire et délivrer votre OS privé pour votre entreprise. Et oui contrairement aux idées reçues il n'est pas compliqué de se fabriquer son propre OS dédié à votre business et utilisable sur la totalité des postes de l'entreprise. Si cette approche vous intéresse, Free-Solutions Sàrl vous aide à créer votre OS privé. Cette approche vous permettra de conserver vos PC beaucoup plus longtemps en toute sécurité car ils fonctionnent avec un OS récent basé sur Ubuntu 22.04 LTS. 
